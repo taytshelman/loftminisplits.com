@@ -1,12 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-    <defs>
-    <linearGradient id="w" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#E8823E"/><stop offset="1" stop-color="#C0664A"/></linearGradient>
-    <linearGradient id="c" x1="1" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#549CBE"/><stop offset="1" stop-color="#38708C"/></linearGradient></defs>
-    <rect width="64" height="64" rx="10.88" fill="#141b24"/>
-    <g fill="none" stroke-linejoin="miter" stroke-linecap="butt">
-     <path d="M 10.239999999999998 42.24 L 32.0 19.2 L 53.760000000000005 42.24" stroke="#141b24" stroke-width="8.64"/>
-     <path d="M 10.239999999999998 42.24 L 32.0 19.2" stroke="url(#w)" stroke-width="5.44"/>
-     <path d="M 32.0 19.2 L 53.760000000000005 42.24" stroke="url(#c)" stroke-width="5.44"/>
-     <path d="M 13.439999999999998 42.24 L 32.0 22.72" stroke="#EDE9E0" stroke-width="0.832"/>
-     <path d="M 32.0 22.72 L 50.56 42.24" stroke="#EDE9E0" stroke-width="0.832"/>
-    </g></svg>
+  <rect width="64" height="64" rx="14" fill="#101722"/>
+  <polygon points="10,40 32,18 32,26 16,42" fill="#E06A2E"/>
+  <polygon points="32,18 54,40 48,42 32,26" fill="#5C93C4"/>
+  <rect x="20" y="46" width="24" height="3" fill="#EDE9E0"/>
+</svg>
