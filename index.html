@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Loft Mini Splits | Ductless Heating + Cooling in Wichita</title>
-<meta name="description" content="Ductless mini split installation from $985, installed in about two hours. One quiet system that heats through January and cools through July. Serving Wichita and 150 miles around it.">
+<meta name="description" content="Ductless mini split installation in Wichita, done in about two hours. One quiet system that heats through January and cools through July. Free quotes, real numbers on the first call.">
 <meta property="og:title" content="Loft Mini Splits | Ductless Heating + Cooling in Wichita">
-<meta property="og:description" content="One quiet system that heats through January and cools through July. Single-room installs from $985, installed in about two hours.">
+<meta property="og:description" content="One quiet system that heats through January and cools through July. Installed in about two hours. Free quotes, real numbers on the first call.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://loftminisplits.com/">
 <meta property="og:image" content="https://loftminisplits.com/assets/og.jpg">
@@ -17,6 +17,8 @@
 <meta name="theme-color" content="#101722">
 <link rel="canonical" href="https://loftminisplits.com/">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/Tanker.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="preload" href="assets/fonts/Archivo.ttf" as="font" type="font/ttf" crossorigin>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -24,9 +26,8 @@
   "name": "Loft Mini Splits",
   "description": "Ductless mini split heating and cooling installation.",
   "slogan": "Warm in January. Cool in July.",
-  "areaServed": [{"@type": "City", "name": "Wichita"}, {"@type": "State", "name": "Kansas"}],
-  "priceRange": "$985 - $12,000",
-  "telephone": "TODO-REAL-NUMBER"
+  "url": "https://loftminisplits.com/",
+  "areaServed": [{"@type": "City", "name": "Wichita"}, {"@type": "State", "name": "Kansas"}]
 }
 </script>
 <script type="application/ld+json">
@@ -35,7 +36,7 @@
   "@type": "FAQPage",
   "mainEntity": [
     {"@type": "Question", "name": "How much does a mini split cost installed?",
-     "acceptedAnswer": {"@type": "Answer", "text": "A single-room 12,000 BTU system starts at $985 installed. Larger multi-room systems run higher depending on zones and sizing. Every quote is free and custom."}},
+     "acceptedAnswer": {"@type": "Answer", "text": "Every home is different, so we quote each job by phone. Tell us the rooms and we size the system and give you your exact installed number, usually on the first call. Quotes are free."}},
     {"@type": "Question", "name": "How long does installation take?",
      "acceptedAnswer": {"@type": "Answer", "text": "A single-zone install typically takes about 1.5 to 2 hours. Most jobs are done the same day, and we can usually schedule same-day or next-day."}},
     {"@type": "Question", "name": "Do mini splits work in Kansas winters?",
@@ -47,56 +48,77 @@
 </script>
 <style>
 @font-face{font-family:'Tanker';src:url('assets/fonts/Tanker.ttf') format('truetype');font-weight:400;font-display:swap}
-@font-face{font-family:'Fraunces';src:url('assets/fonts/Fraunces.ttf') format('truetype');font-weight:300 900;font-display:swap}
 @font-face{font-family:'Archivo';src:url('assets/fonts/Archivo.ttf') format('truetype');font-weight:100 900;font-display:swap}
 @font-face{font-family:'Barlow Semi Condensed';src:url('assets/fonts/BarlowSemiCondensed-SemiBold.ttf') format('truetype');font-weight:600;font-display:swap}
+@font-face{font-family:'Barlow Semi Condensed';src:url('assets/fonts/BarlowSemiCondensed-Bold.ttf') format('truetype');font-weight:700;font-display:swap}
 :root{
-  --paper:#F7F4ED; --ink:#171D26; --ink-dim:#5b6472; --slate:#101722; --slate-2:#161f2c;
-  --linen:#EDE9E0; --warm:#C0664A; --warm-bright:#E06A2E; --cool:#3E6E9E;
-  --line:rgba(23,29,38,.14); --line-l:rgba(237,233,224,.16); --gold:#D9A94F;
-  --maxw:1140px;
+  --paper:#F7F4ED; --ink:#171D26; --ink-dim:#525b68; --slate:#101722; --slate-2:#161f2c;
+  --linen:#EDE9E0; --warm:#C0664A; --warm-bright:#E06A2E; --cool:#3E6E9E; --cool-bright:#5C93C4;
+  --line:rgba(23,29,38,.14); --line-l:rgba(237,233,224,.16);
+  --maxw:1180px;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 
 body{font-family:'Archivo',system-ui,sans-serif;font-weight:400;background:var(--paper);color:var(--ink);line-height:1.65;-webkit-font-smoothing:antialiased}
 img{max-width:100%;height:auto;display:block}
 .wrap{max-width:var(--maxw);margin:0 auto;padding:0 26px}
-.serif{font-family:'Fraunces',serif}
-.eyebrow{font-family:'Barlow Semi Condensed';font-weight:600;letter-spacing:3px;text-transform:uppercase;font-size:12.5px}
+.display{font-family:'Tanker';font-weight:400;text-transform:uppercase}
+.eyebrow{font-family:'Barlow Semi Condensed';font-weight:700;letter-spacing:3.5px;text-transform:uppercase;font-size:13px}
+
+/* ---------- buttons: squared trade style ---------- */
+.btn{display:inline-block;text-decoration:none;font-family:'Barlow Semi Condensed';font-weight:700;letter-spacing:2px;text-transform:uppercase;font-size:15px;cursor:pointer}
+.btn-solid{background:var(--warm-bright);color:#fff;padding:18px 34px;border-radius:4px;box-shadow:0 2px 0 #B8511F}
+.btn-solid:hover{background:#F07A3E}
+.btn-ghost{color:var(--linen);border:2px solid rgba(237,233,224,.4);padding:16px 30px;border-radius:4px}
+.btn-ghost:hover{border-color:var(--linen)}
 
 /* ---------- nav ---------- */
 header{position:absolute;inset:0 0 auto 0;z-index:20}
-.nav{display:flex;align-items:center;padding:26px 0;gap:30px}
-.brand{display:block;text-decoration:none}
-.brand svg{width:108px;height:68px;display:block}
-
-
-.nav nav{margin-left:auto;display:flex;gap:26px;align-items:center}
-.nav nav a{color:rgba(237,233,224,.75);text-decoration:none;font-size:14.5px;letter-spacing:.3px}
+.nav{display:flex;align-items:center;padding-top:22px;padding-bottom:22px;gap:30px}
+.brand{display:flex;text-decoration:none;align-items:center}
+.brand svg{height:46px;width:auto;display:block}
+.nav nav{margin-left:auto;display:flex;gap:28px;align-items:center}
+.nav nav a{color:rgba(237,233,224,.8);text-decoration:none;font-family:'Barlow Semi Condensed';font-weight:600;letter-spacing:1.5px;text-transform:uppercase;font-size:13.5px}
 .nav nav a:hover{color:var(--linen)}
-.nav .tel{color:var(--linen);font-weight:700;border:1px solid rgba(237,233,224,.35);padding:10px 20px;border-radius:99px}
-.nav .tel:hover{background:rgba(237,233,224,.1)}
-@media(max-width:860px){.nav nav a:not(.tel){display:none}.nav .tel{background:var(--linen);color:var(--ink);border-color:var(--linen);font-weight:800}.brand svg{width:108px;height:68px;display:block}.nav .tel{padding:8px 14px;font-size:14px}.nav{padding:16px 0}}
+.nav .cta{background:var(--warm-bright);color:#fff;padding:12px 22px;border-radius:4px;font-weight:700;letter-spacing:1.5px}
+.nav .cta:hover{background:#F07A3E;color:#fff}
+@media(max-width:860px){
+  .nav nav a:not(.cta){display:none}
+  .nav{padding-top:14px;padding-bottom:14px}
+  .brand svg{height:40px}
+  .nav .cta{padding:11px 16px;font-size:12.5px}
+}
 
 /* ---------- hero ---------- */
-.hero{position:relative;min-height:92vh;min-height:92svh;display:flex;align-items:flex-end;color:var(--linen);isolation:isolate}
-.hero .bg{position:absolute;inset:0;z-index:-2}
+.hero{position:relative;min-height:92vh;min-height:92svh;display:flex;align-items:flex-end;color:var(--linen);isolation:isolate;overflow:hidden}
+.hero .bg{position:absolute;inset:0;z-index:-2;overflow:hidden}
 .hero .bg img{width:100%;height:100%;object-fit:cover}
 @media(max-width:600px){.hero .bg img{object-position:12% 35%}}
 .hero::after{content:"";position:absolute;inset:0;z-index:-1;
- background:linear-gradient(to top,rgba(10,14,20,.92) 0%,rgba(10,14,20,.55) 48%,rgba(10,14,20,.3) 100%)}
-.hero .wrap{padding-bottom:84px;padding-top:160px}
+ background:linear-gradient(to top,rgba(10,14,20,.94) 0%,rgba(10,14,20,.55) 48%,rgba(10,14,20,.35) 100%)}
+.hero .wrap{padding-bottom:64px;padding-top:150px;width:100%}
 .hero .eyebrow{color:var(--linen);text-shadow:0 1px 8px rgba(10,14,20,.8)}
-.hero h1{font-family:'Fraunces',serif;font-weight:600;text-shadow:0 2px 18px rgba(10,14,20,.55);font-size:clamp(38px,6.4vw,84px);line-height:1.02;letter-spacing:-.5px;margin-top:14px;max-width:13ch;text-wrap:balance}
-.hero h1 em{font-style:italic;color:#E8B98F}
-.hero .sub{margin-top:22px;font-size:18.5px;color:rgba(237,233,224,.92);max-width:52ch;text-shadow:0 1px 12px rgba(10,14,20,.7)}
-.hero .row{margin-top:34px;display:flex;align-items:center;gap:26px;flex-wrap:wrap}
-.btn{display:inline-block;text-decoration:none;font-weight:700;letter-spacing:.3px}
-.btn-solid{background:var(--linen);color:var(--ink);padding:17px 34px;border-radius:99px;font-size:16.5px}
-.btn-solid:hover{background:#fff}
-.hero .from{font-size:15px;color:rgba(237,233,224,.75)}
-.hero .from b{color:var(--linen);font-size:17px}
+.hero h1{font-family:'Tanker';font-weight:400;text-transform:uppercase;text-shadow:0 3px 22px rgba(10,14,20,.6);font-size:clamp(42px,7vw,96px);line-height:.98;letter-spacing:1px;margin-top:16px;max-width:14ch;text-wrap:balance}
+.hero h1 .warm{color:#F0895A}
+.hero h1 .cool{color:#7FB0D6}
+.hero .sub{margin-top:20px;font-size:18.5px;color:rgba(237,233,224,.92);max-width:52ch;text-shadow:0 1px 12px rgba(10,14,20,.7)}
+.hero .row{margin-top:32px;display:flex;align-items:center;gap:22px;flex-wrap:wrap}
+.hero .from{font-family:'Barlow Semi Condensed';font-weight:600;letter-spacing:1px;text-transform:uppercase;font-size:14px;color:rgba(237,233,224,.8)}
 
+/* ---------- proof bar ---------- */
+.proof{background:var(--slate);color:var(--linen);border-top:1px solid var(--line-l)}
+.proof .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:1px}
+.proof .cell{padding:26px 20px;text-align:center;border-left:1px solid var(--line-l)}
+.proof .cell:first-child{border-left:0}
+.proof b{display:block;font-family:'Tanker';font-size:28px;letter-spacing:.5px;color:var(--linen)}
+.proof span{display:block;margin-top:4px;font-family:'Barlow Semi Condensed';font-weight:600;letter-spacing:1.8px;text-transform:uppercase;font-size:11.5px;color:rgba(237,233,224,.55)}
+@media(max-width:760px){
+  .proof .wrap{grid-template-columns:1fr 1fr}
+  .proof .cell{padding:20px 12px}
+  .proof .cell:nth-child(3){border-left:0}
+  .proof .cell:nth-child(1),.proof .cell:nth-child(2){border-bottom:1px solid var(--line-l)}
+  .proof b{font-size:23px}
+}
 
 /* ---------- motion ---------- */
 .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s cubic-bezier(.2,.6,.2,1),transform .7s cubic-bezier(.2,.6,.2,1)}
@@ -109,111 +131,135 @@ header{position:absolute;inset:0 0 auto 0;z-index:20}
 @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}.hero .bg img,.hero .eyebrow,.hero h1,.hero .sub,.hero .row{animation:none}}
 
 /* ---------- statement ---------- */
-.statement{padding:110px 0 96px}
-.statement .wrap{max-width:900px}
-.statement p{font-family:'Fraunces',serif;font-weight:500;font-size:clamp(24px,3.2vw,38px);line-height:1.35;letter-spacing:-.2px;text-wrap:balance}
-.statement p em{font-style:italic;color:var(--warm)}
-.statement .src{margin-top:26px;font-size:15px;color:var(--ink-dim)}
+.statement{padding:104px 0 92px}
+.statement .wrap{max-width:920px}
+.statement p{font-family:'Tanker';text-transform:uppercase;font-size:clamp(26px,3.6vw,44px);line-height:1.16;letter-spacing:.5px;text-wrap:balance}
+.statement p em{font-style:normal;color:var(--warm-bright)}
+.statement .src{margin-top:24px;font-size:15px;color:var(--ink-dim)}
 
 /* ---------- two seasons ---------- */
 .seasons{display:grid;grid-template-columns:1fr 1fr}
 @media(max-width:860px){.seasons{grid-template-columns:1fr}}
 .season{position:relative;display:flex;align-items:flex-end;min-height:440px;color:var(--linen);isolation:isolate;overflow:hidden}
 .season img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
-.season::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(to top,rgba(10,14,20,.75),rgba(10,14,20,.05) 55%)}
-.season .inner{padding:36px 40px}
-.season h3{font-family:'Fraunces',serif;font-weight:600;font-size:30px}
-.season p{margin-top:6px;font-size:15.5px;color:rgba(237,233,224,.85);max-width:38ch}
-.season .eyebrow{color:var(--gold)}
+.season::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(to top,rgba(10,14,20,.88),rgba(10,14,20,.18) 60%)}
+.season .inner{padding:34px 40px}
+@media(max-width:600px){.season .inner{padding:26px 24px}.season{min-height:360px}}
+.season h3{font-family:'Tanker';text-transform:uppercase;font-size:30px;letter-spacing:.5px;text-shadow:0 2px 14px rgba(10,14,20,.7)}
+.season p{margin-top:6px;font-size:15.5px;color:rgba(237,233,224,.92);max-width:38ch;text-shadow:0 1px 10px rgba(10,14,20,.8)}
+.season .eyebrow{text-shadow:0 1px 8px rgba(10,14,20,.8)}
+.season.jan .eyebrow{color:#F0895A}
+.season.jul .eyebrow{color:#7FB0D6}
 
-/* ---------- pricing ---------- */
-.pricing{background:var(--slate);color:var(--linen);padding:110px 0}
-.pricing .head{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:end;margin-bottom:64px}
-@media(max-width:860px){.pricing .head{grid-template-columns:1fr}}
-.pricing .eyebrow{color:var(--gold)}
-.pricing h2{font-family:'Fraunces',serif;font-weight:600;font-size:clamp(32px,4.4vw,54px);line-height:1.08;margin-top:12px;letter-spacing:-.4px;text-wrap:balance}
+/* ---------- pricing / straight answers ---------- */
+.pricing{background:var(--slate);color:var(--linen);padding:104px 0}
+.pricing .head{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:end;margin-bottom:60px}
+@media(max-width:860px){.pricing .head{grid-template-columns:1fr;gap:20px}}
+.pricing .eyebrow{color:var(--warm-bright)}
+.pricing h2{font-family:'Tanker';text-transform:uppercase;font-size:clamp(32px,4.6vw,58px);line-height:1.02;margin-top:12px;letter-spacing:.5px;text-wrap:balance}
 .pricing .head p{color:rgba(237,233,224,.7);font-size:16.5px;max-width:46ch}
 .tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line-l);border:1px solid var(--line-l)}
 @media(max-width:860px){.tiers{grid-template-columns:1fr}}
-.tier{background:var(--slate);padding:44px 36px}
+.tier{background:var(--slate);padding:40px 34px;position:relative}
 .tier:hover{background:var(--slate-2)}
+.tier::before{content:"";position:absolute;top:0;left:0;width:44px;height:4px;background:var(--warm-bright)}
+.tier:nth-child(2)::before{background:var(--cool-bright)}
+.tier:nth-child(3)::before{background:var(--linen)}
 .tier .eyebrow{color:rgba(237,233,224,.5)}
-.tier .price{font-family:'Fraunces',serif;font-weight:600;font-size:46px;margin-top:14px}
-.tier .price small{font-family:'Archivo';font-size:14px;font-weight:500;color:rgba(237,233,224,.6);letter-spacing:.2px}
+.tier h3{font-family:'Tanker';text-transform:uppercase;font-size:34px;margin-top:14px;letter-spacing:.5px}
 .tier .for{margin-top:4px;font-size:15px;color:rgba(237,233,224,.75)}
 .tier ul{list-style:none;margin-top:22px;font-size:14.5px;color:rgba(237,233,224,.65)}
 .tier li{padding:5px 0 5px 20px;position:relative}
 .tier li::before{content:"";position:absolute;left:0;top:14px;width:8px;height:2px;background:var(--warm-bright)}
-.pricing .foot{margin-top:34px;font-size:14px;color:rgba(237,233,224,.55);max-width:70ch}
+.pricing .foot{margin-top:32px;font-size:14.5px;color:rgba(237,233,224,.6);max-width:74ch}
 .pricing .foot a{color:var(--linen)}
 
+/* ---------- reviews ---------- */
+.reviews{padding:104px 0;background:var(--paper)}
+.reviews .head{display:grid;grid-template-columns:auto 1fr;gap:56px;align-items:center;margin-bottom:54px}
+@media(max-width:760px){.reviews .head{grid-template-columns:1fr;gap:18px}}
+.reviews .eyebrow{color:var(--warm)}
+.reviews .stat{font-family:'Tanker';font-size:clamp(64px,9vw,112px);line-height:1;color:var(--ink)}
+.reviews .stat small{font-family:'Barlow Semi Condensed';font-weight:700;letter-spacing:2px;text-transform:uppercase;font-size:14px;display:block;margin-top:6px;color:var(--ink-dim)}
+.reviews .head h2{font-family:'Tanker';text-transform:uppercase;font-size:clamp(28px,3.6vw,44px);line-height:1.06;letter-spacing:.5px;margin-top:12px}
+.reviews .head .note{margin-top:12px;color:var(--ink-dim);font-size:15.5px;max-width:44ch}
+.rgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+@media(max-width:860px){.rgrid{grid-template-columns:1fr}}
+.rcard{background:#fff;border:1px solid var(--line);border-top:4px solid var(--warm-bright);padding:30px 28px;display:flex;flex-direction:column;gap:16px}
+.rcard:nth-child(2){border-top-color:var(--cool-bright)}
+.rcard:nth-child(3){border-top-color:var(--ink)}
+.rcard .q{font-size:16.5px;line-height:1.6;color:var(--ink)}
+.rcard .who{margin-top:auto;font-family:'Barlow Semi Condensed';font-weight:700;letter-spacing:1.5px;text-transform:uppercase;font-size:13px;color:var(--ink)}
+.rcard .who span{display:block;margin-top:2px;color:var(--ink-dim);font-weight:600;letter-spacing:1px;font-size:11.5px}
+.reviews .src{margin-top:30px;font-size:14.5px;color:var(--ink-dim)}
+.reviews .src a{color:var(--warm);font-weight:700;text-decoration:none}
+.reviews .src a:hover{text-decoration:underline}
+
 /* ---------- process ---------- */
-.process{padding:110px 0}
+.process{padding:104px 0;background:#F1EDE3;border-top:1px solid var(--line)}
 .process .grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:64px}
-@media(max-width:860px){.process .grid{grid-template-columns:1fr}}
+@media(max-width:860px){.process .grid{grid-template-columns:1fr;gap:30px}}
 .process .eyebrow{color:var(--warm)}
-.process h2{font-family:'Fraunces',serif;font-weight:600;font-size:clamp(30px,3.8vw,46px);line-height:1.1;margin-top:12px;letter-spacing:-.3px}
+.process h2{font-family:'Tanker';text-transform:uppercase;font-size:clamp(30px,4vw,50px);line-height:1.04;margin-top:12px;letter-spacing:.5px}
 .process .intro{margin-top:16px;color:var(--ink-dim);font-size:16.5px;max-width:38ch}
 .steps{display:flex;flex-direction:column}
-.step{display:grid;grid-template-columns:64px 1fr;gap:22px;padding:28px 0;border-top:1px solid var(--line)}
-.step:last-child{border-bottom:1px solid var(--line)}
-.step .n{font-family:'Fraunces',serif;font-weight:600;font-size:34px;color:var(--warm)}
+.step{display:grid;grid-template-columns:64px 1fr;gap:22px;padding:28px 0;border-top:2px solid var(--ink)}
+.step:last-child{border-bottom:2px solid var(--ink)}
+.step .n{font-family:'Tanker';font-size:34px;color:var(--warm-bright)}
 .step h3{font-size:19px;font-weight:700}
 .step p{margin-top:6px;color:var(--ink-dim);font-size:15.5px;max-width:52ch}
 
 /* ---------- areas ---------- */
 .areas{border-top:1px solid var(--line);padding:88px 0}
 .areas .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start}
-@media(max-width:860px){.areas .wrap{grid-template-columns:1fr}}
+@media(max-width:860px){.areas .wrap{grid-template-columns:1fr;gap:24px}}
 .areas .eyebrow{color:var(--cool)}
-.areas h2{font-family:'Fraunces',serif;font-weight:600;font-size:clamp(28px,3.4vw,42px);line-height:1.12;margin-top:12px;letter-spacing:-.3px}
+.areas h2{font-family:'Tanker';text-transform:uppercase;font-size:clamp(28px,3.6vw,46px);line-height:1.06;margin-top:12px;letter-spacing:.5px}
 .arearow{display:flex;justify-content:space-between;align-items:baseline;gap:18px;padding:20px 0;border-top:1px solid var(--line)}
 .arearow:last-child{border-bottom:1px solid var(--line)}
 .arearow .city{font-size:19px;font-weight:700}
 .arearow .det{font-size:14.5px;color:var(--ink-dim);text-align:right}
 .arearow .live{color:#2c7a4b;font-weight:700}
-.arearow .soon{color:var(--cool);font-weight:700}
+.arearow a{color:var(--warm);font-weight:700;text-decoration:none}
 
 /* ---------- faq ---------- */
-.faq{padding:96px 0;background:#F1EDE3;border-top:1px solid var(--line)}
-.faq .wrap{max-width:820px}
+.faq{padding:96px 0;background:var(--paper);border-top:1px solid var(--line)}
+.faq .wrap{max-width:840px}
 .faq .eyebrow{color:var(--warm)}
-.faq h2{font-family:'Fraunces',serif;font-weight:600;font-size:clamp(28px,3.4vw,40px);margin:12px 0 34px;letter-spacing:-.3px}
+.faq h2{font-family:'Tanker';text-transform:uppercase;font-size:clamp(28px,3.6vw,44px);margin:12px 0 34px;letter-spacing:.5px}
 .faq details{border-top:1px solid var(--line)}
 .faq details:last-of-type{border-bottom:1px solid var(--line)}
 .faq summary{padding:22px 4px;font-weight:700;font-size:17px;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:20px}
 .faq summary::-webkit-details-marker{display:none}
-.faq summary::after{content:"+";font-family:'Fraunces';font-size:24px;color:var(--warm);flex:none}
+.faq summary::after{content:"+";font-family:'Tanker';font-size:24px;color:var(--warm-bright);flex:none}
 .faq details[open] summary::after{content:"\00d7"}
 .faq .a{padding:0 4px 24px;color:var(--ink-dim);font-size:15.5px;max-width:68ch}
 
 /* ---------- quote form ---------- */
-.quote{background:var(--paper);padding:104px 0;border-top:1px solid var(--line)}
+.quote{background:#F1EDE3;padding:104px 0;border-top:1px solid var(--line)}
 .qgrid{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:start}
-@media(max-width:860px){.qgrid{grid-template-columns:1fr}}
+@media(max-width:860px){.qgrid{grid-template-columns:1fr;gap:30px}}
 .quote .eyebrow{color:var(--warm)}
-.quote h2{font-family:'Fraunces',serif;font-weight:600;font-size:clamp(28px,3.6vw,44px);line-height:1.1;margin-top:12px;letter-spacing:-.3px}
+.quote h2{font-family:'Tanker';text-transform:uppercase;font-size:clamp(28px,3.8vw,48px);line-height:1.04;margin-top:12px;letter-spacing:.5px}
 .qintro{margin-top:14px;color:var(--ink-dim);font-size:16px;max-width:38ch}
 .qform{display:flex;flex-direction:column;gap:18px}
 .qform label[hidden]{display:none}
 .qform label{display:flex;flex-direction:column;gap:7px;font-family:'Barlow Semi Condensed';font-weight:600;font-size:13px;letter-spacing:1.6px;text-transform:uppercase;color:var(--ink-dim)}
-.qform input,.qform textarea,.qform select{font-family:'Archivo';font-size:16px;padding:14px 16px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);width:100%;appearance:none;-webkit-appearance:none}
-.qform select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23C0664A' stroke-width='2' fill='none'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 16px center}
-.qform input:focus,.qform textarea:focus,.qform select:focus{outline:2px solid var(--warm);outline-offset:1px;border-color:transparent}
+.qform input,.qform textarea,.qform select{font-family:'Archivo';font-size:16px;padding:14px 16px;border:1px solid rgba(23,29,38,.25);border-radius:4px;background:#fff;color:var(--ink);width:100%;appearance:none;-webkit-appearance:none}
+.qform select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23E06A2E' stroke-width='2' fill='none'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 16px center}
+.qform input:focus,.qform textarea:focus,.qform select:focus{outline:2px solid var(--warm-bright);outline-offset:1px;border-color:transparent}
 .frow{display:grid;grid-template-columns:1fr 1fr;gap:18px}
 @media(max-width:560px){.frow{grid-template-columns:1fr}}
-.btn-warm{background:var(--warm);color:#fff;padding:16px 30px;border-radius:99px;border:0;font-size:16.5px;font-weight:700;cursor:pointer;font-family:'Archivo'}
-.btn-warm:hover{background:var(--warm-bright)}
+.qform .btn-solid{border:0;width:fit-content}
 .qnote{font-size:14.5px;color:var(--ink-dim)}
-.qnote a{color:var(--ink);font-weight:700}
 
 /* ---------- final ---------- */
-.final{position:relative;background:var(--slate);color:var(--linen);padding:130px 0;text-align:center;overflow:hidden}
-.final .roofline{position:absolute;left:50%;top:46px;transform:translateX(-50%);width:190px;opacity:.9}
-.final h2{font-family:'Fraunces',serif;font-weight:600;font-size:clamp(32px,4.6vw,56px);line-height:1.08;letter-spacing:-.4px;text-wrap:balance;margin-top:52px}
-.final h2 em{font-style:italic;color:#E8B98F}
+.final{position:relative;background:var(--slate);color:var(--linen);padding:120px 0;text-align:center;overflow:hidden}
+.final .roofline{position:absolute;left:50%;top:44px;transform:translateX(-50%);width:190px;opacity:.95}
+.final h2{font-family:'Tanker';text-transform:uppercase;font-size:clamp(32px,5vw,64px);line-height:1.02;letter-spacing:.5px;text-wrap:balance;margin-top:56px}
+.final h2 em{font-style:normal;color:#F0895A}
 .final p{margin-top:16px;color:rgba(237,233,224,.7);font-size:17px}
-.final .btn-solid{margin-top:34px;font-size:17px;padding:18px 40px}
+.final .btn-solid{margin-top:34px}
 footer{background:var(--slate);color:rgba(237,233,224,.45);border-top:1px solid var(--line-l);padding:30px 0;font-size:14px}
 footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 footer a{color:rgba(237,233,224,.7);text-decoration:none}
@@ -223,24 +269,26 @@ footer a{color:rgba(237,233,224,.7);text-decoration:none}
 
 <header>
   <div class="wrap nav">
-    <a class="brand" href="/">
-      <svg viewBox="0 0 240 150" aria-hidden="true">
-        <g transform="translate(64,4)">
-          <polygon points="6,54 56,14 56,22 12,57" fill="#E06A2E"/>
-          <polygon points="56,14 106,54 100,57 56,22" fill="#5C93C4"/>
-          <polygon points="6,54 56,22 56,26 14,60" fill="#B8511F"/>
-          <polygon points="56,22 106,54 101,60 56,26" fill="#3E6E9E"/>
+    <a class="brand" href="/" aria-label="Loft Mini Splits">
+      <svg viewBox="0 0 236 92" aria-hidden="true">
+        <g>
+          <polygon points="4,44 42,14 42,21 9,47" fill="#E06A2E"/>
+          <polygon points="42,14 80,44 75,47 42,21" fill="#5C93C4"/>
+          <polygon points="4,44 42,21 42,25 11,50" fill="#B8511F"/>
+          <polygon points="42,21 80,44 76,50 42,25" fill="#3E6E9E"/>
         </g>
-        <text x="120" y="106" text-anchor="middle" font-family="Tanker" font-size="44" letter-spacing="7" fill="#EDE9E0">LOFT</text>
-        <text x="120" y="136" text-anchor="middle" font-family="Barlow Semi Condensed" font-weight="600" font-size="15" letter-spacing="9" fill="#8a94a0">MINI SPLITS</text>
+        <text x="4" y="82" font-family="Tanker" font-size="42" letter-spacing="5" fill="#EDE9E0">LOFT</text>
+        <text x="128" y="60" font-family="Barlow Semi Condensed" font-weight="600" font-size="14" letter-spacing="6" fill="#8a94a0">MINI</text>
+        <text x="128" y="82" font-family="Barlow Semi Condensed" font-weight="600" font-size="14" letter-spacing="6" fill="#8a94a0">SPLITS</text>
       </svg>
     </a>
     <nav>
       <a href="#pricing">Pricing</a>
+      <a href="#reviews">Reviews</a>
       <a href="#process">How it works</a>
       <a href="#areas">Service area</a>
       <a href="#faq">FAQ</a>
-      <a class="tel btn" href="tel:+13165550100">(316) 555&#8209;0100</a>
+      <a class="cta" href="#quote">Free quote</a>
     </nav>
   </div>
 </header>
@@ -248,34 +296,43 @@ footer a{color:rgba(237,233,224,.7);text-decoration:none}
 <section class="hero">
   <div class="bg"><img src="assets/hero-winter.jpg" alt="Warm living room in winter with a wall-mounted mini split" fetchpriority="high"></div>
   <div class="wrap">
-    <div class="eyebrow">Ductless heating + cooling &middot; Wichita</div>
-    <h1>Warm in January. <em>Cool in July.</em> One quiet system.</h1>
+    <div class="eyebrow">Ductless heating + cooling &middot; Wichita, Kansas</div>
+    <h1>Warm in <span class="warm">January</span>. Cool in <span class="cool">July</span>. One quiet system.</h1>
     <p class="sub">Mini splits heat and cool the rooms you actually live in, without ductwork, for a fraction of what central air costs to run. Installed in about two hours.</p>
     <div class="row">
       <a class="btn btn-solid" href="#quote">Get a free quote</a>
-      <div class="from">Single-room systems from <b>$985 installed</b></div>
+      <div class="from">Real number on the first call</div>
     </div>
   </div>
 </section>
 
+<div class="proof">
+  <div class="wrap">
+    <div class="cell"><b>94%</b><span>Recommend on Facebook</span></div>
+    <div class="cell"><b>~2 hrs</b><span>Typical install time</span></div>
+    <div class="cell"><b>Since 2019</b><span>Installing in Kansas</span></div>
+    <div class="cell"><b>5 + 2 yr</b><span>Parts + labor warranty</span></div>
+  </div>
+</div>
+
 <section class="statement">
   <div class="wrap">
-    <p>Your furnace fights the whole house. A mini split wins the room, heating or cooling <em>exactly where you live</em>, quietly, for pennies on the dollar.</p>
+    <p>Your furnace fights the whole house. A mini split wins the room, <em>exactly where you live</em>, for pennies on the dollar.</p>
     <div class="src">Installing across Kansas since 2019. 5-year parts and 2-year labor warranty on every job.</div>
   </div>
 </section>
 
 <section class="seasons">
-  <div class="season">
-    <img src="assets/loft-winter.jpg" alt="Mini split heating a snug attic bedroom in winter">
+  <div class="season jan">
+    <img src="assets/loft-winter.jpg" alt="Mini split heating a snug attic bedroom in winter" loading="lazy">
     <div class="inner">
       <div class="eyebrow">January</div>
       <h3>Heat that holds</h3>
       <p>Cold-climate units heat efficiently well below freezing. No ducts losing warm air in the attic.</p>
     </div>
   </div>
-  <div class="season">
-    <img src="assets/hero-summer.jpg" alt="Mini split cooling a bright bedroom in summer">
+  <div class="season jul">
+    <img src="assets/hero-summer.jpg" alt="Mini split cooling a bright bedroom in summer" loading="lazy">
     <div class="inner">
       <div class="eyebrow">July</div>
       <h3>Cool that whispers</h3>
@@ -288,15 +345,15 @@ footer a{color:rgba(237,233,224,.7);text-decoration:none}
   <div class="wrap">
     <div class="head">
       <div>
-        <div class="eyebrow">Straight pricing</div>
-        <h2>Know the number before we knock.</h2>
+        <div class="eyebrow">Straight answers</div>
+        <h2>A real number on the first call.</h2>
       </div>
-      <p>Most companies make you book a sales visit to hear a number. We publish where pricing starts, then size the exact system to your rooms.</p>
+      <p>Most companies make you book a sales visit before they will say a price. We size the system to your rooms over the phone and give you the exact installed number. Free, no pressure, usually same day.</p>
     </div>
     <div class="tiers">
       <div class="tier">
-        <div class="eyebrow">One room</div>
-        <div class="price">$985 <small>installed</small></div>
+        <div class="eyebrow">Option one</div>
+        <h3>One room</h3>
         <div class="for">12,000 BTU, single zone</div>
         <ul>
           <li>Bedroom, office, garage, or shop</li>
@@ -305,8 +362,8 @@ footer a{color:rgba(237,233,224,.7);text-decoration:none}
         </ul>
       </div>
       <div class="tier">
-        <div class="eyebrow">Two rooms</div>
-        <div class="price">Custom <small>sized to your home</small></div>
+        <div class="eyebrow">Option two</div>
+        <h3>Two rooms</h3>
         <div class="for">18k to 24k BTU, two zones</div>
         <ul>
           <li>Each room sets its own temperature</li>
@@ -315,9 +372,9 @@ footer a{color:rgba(237,233,224,.7);text-decoration:none}
         </ul>
       </div>
       <div class="tier">
-        <div class="eyebrow">Whole home</div>
-        <div class="price">Custom <small>3 to 4 zones and up</small></div>
-        <div class="for">Full-home comfort, no ductwork</div>
+        <div class="eyebrow">Option three</div>
+        <h3>Whole home</h3>
+        <div class="for">3 to 4 zones and up</div>
         <ul>
           <li>Replaces aging central systems</li>
           <li>Investor and multi-unit pricing</li>
@@ -325,7 +382,35 @@ footer a{color:rgba(237,233,224,.7);text-decoration:none}
         </ul>
       </div>
     </div>
-    <p class="foot">Every install includes the 5-year manufacturer parts warranty and our 2-year labor warranty. See the full <a href="mini-split-cost-wichita.html" style="color:var(--linen)">2026 Wichita cost guide</a> for market ranges and rebates. Exact quotes are free and usually take one phone call: <a href="tel:+13165550100">(316) 555&#8209;0100</a>.</p>
+    <p class="foot">Every install includes the 5-year manufacturer parts warranty and our 2-year labor warranty. Curious what the market charges? See the <a href="mini-split-cost-wichita.html">2026 Wichita cost guide</a> for typical ranges and the Evergy rebate, then <a href="#quote">get your exact number free</a>.</p>
+  </div>
+</section>
+
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <div class="head">
+      <div class="stat">94%<small>recommend &middot; 15 reviews</small></div>
+      <div>
+        <div class="eyebrow">Real customers</div>
+        <h2>The work speaks. So do they.</h2>
+        <p class="note">Straight from our customers on Facebook. Same crew, same standard, every install.</p>
+      </div>
+    </div>
+    <div class="rgrid">
+      <div class="rcard">
+        <p class="q">&ldquo;Amazing service, great individuals. Had heating issues in our movie room, they came and installed the mini splits super fast; not to mention the pricing was legit!&rdquo;</p>
+        <div class="who">Aiden Blackmon<span>Facebook review &middot; January 2026</span></div>
+      </div>
+      <div class="rcard">
+        <p class="q">&ldquo;These guys were so polite, got 8 units installed in a day and a half. Price was great and they did a great job!&rdquo;</p>
+        <div class="who">Michelle Sanchez<span>Facebook review &middot; December 2025</span></div>
+      </div>
+      <div class="rcard">
+        <p class="q">&ldquo;Their workers are efficient and make the work look good, and I love how the mini split works.&rdquo;</p>
+        <div class="who">Kaden Kawik<span>Facebook review &middot; December 2025</span></div>
+      </div>
+    </div>
+    <p class="src">Read every review on <a href="https://www.facebook.com/61571015202028/reviews" target="_blank" rel="noopener">our Facebook page</a>.</p>
   </div>
 </section>
 
@@ -362,7 +447,7 @@ footer a{color:rgba(237,233,224,.7);text-decoration:none}
     <div>
       <div class="arearow"><div class="city">Wichita metro</div><div class="det"><span class="live">Serving now</span></div></div>
       <div class="arearow"><div class="city">Within 150 miles</div><div class="det">Hutchinson &middot; Salina &middot; El Dorado &middot; Newton &middot; Derby &middot; Andover</div></div>
-      <div class="arearow"><div class="city">Not sure you're in range?</div><div class="det"><a href="#quote" style="color:var(--warm);font-weight:700;text-decoration:none">Ask us, it takes a minute</a></div></div>
+      <div class="arearow"><div class="city">Not sure you're in range?</div><div class="det"><a href="#quote">Ask us, it takes a minute</a></div></div>
     </div>
   </div>
 </section>
@@ -373,7 +458,7 @@ footer a{color:rgba(237,233,224,.7);text-decoration:none}
     <h2>What everyone asks first.</h2>
     <details open>
       <summary>How much does a mini split cost installed?</summary>
-      <div class="a">A single-room 12,000 BTU system starts at $985 installed. Bigger rooms and multi-zone systems cost more because the equipment is bigger, but you will know your exact number before we schedule anything. Quotes are free.</div>
+      <div class="a">Every home is different, so we quote each job for real instead of guessing from a chart. Tell us the rooms and we size the system and give you your exact installed number, usually on the first call. Quotes are free, and you will have your number before we schedule anything.</div>
     </details>
     <details>
       <summary>Do mini splits actually work in a Kansas winter?</summary>
@@ -423,8 +508,8 @@ footer a{color:rgba(237,233,224,.7);text-decoration:none}
       <label id="sqftwrap" hidden>Approximate square footage?
         <input type="text" name="sqft" id="sqft" inputmode="numeric" placeholder="Example: 1,400">
       </label>
-      <button type="submit" class="btn btn-warm">Send my free quote</button>
-      <div class="qnote">Prefer to talk? <a href="tel:+13165550100">(316) 555&#8209;0100</a></div>
+      <button type="submit" class="btn btn-solid">Send my free quote</button>
+      <div class="qnote">We call or text back fast, usually the same day.</div>
     </form>
   </div>
 </section>
@@ -443,8 +528,8 @@ footer a{color:rgba(237,233,224,.7);text-decoration:none}
 
 <footer>
   <div class="wrap">
-    <div>&copy; 2026 Loft Mini Splits &middot; Wichita &#9733; Omaha &#9733; Ozarks</div>
-    <div><a href="tel:+13165550100">(316) 555&#8209;0100</a> &middot; Installing since 2019</div>
+    <div>&copy; 2026 Loft Mini Splits &middot; Wichita, Kansas</div>
+    <div><a href="https://www.facebook.com/61571015202028" target="_blank" rel="noopener">Facebook</a> &middot; Installing since 2019</div>
   </div>
 </footer>
 
@@ -467,7 +552,7 @@ if (location.hash) history.replaceState(null, '', location.pathname);
 <script>
 (function () {
   if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-  var els = document.querySelectorAll('.sec-h,.tier,.step,.season .inner,.arearow,.faq details,.statement p,.statement .src,.qgrid > *');
+  var els = document.querySelectorAll('.tier,.step,.season .inner,.arearow,.faq details,.statement p,.statement .src,.qgrid > *,.rcard,.reviews .head > *,.proof .cell');
   var io = new IntersectionObserver(function (entries) {
     entries.forEach(function (en) {
       if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); }

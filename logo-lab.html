@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Loft logo lab, round 3</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<style>
+@font-face{font-family:'Tanker';src:url('assets/fonts/Tanker.ttf') format('truetype');font-display:swap}
+@font-face{font-family:'Archivo';src:url('assets/fonts/Archivo.ttf') format('truetype');font-weight:100 900;font-display:swap}
+@font-face{font-family:'Barlow Semi Condensed';src:url('assets/fonts/BarlowSemiCondensed-SemiBold.ttf') format('truetype');font-weight:600;font-display:swap}
+@font-face{font-family:'Barlow Semi Condensed';src:url('assets/fonts/BarlowSemiCondensed-Bold.ttf') format('truetype');font-weight:700;font-display:swap}
+:root{--slate:#101722;--linen:#EDE9E0;--paper:#F7F4ED;--warm:#E06A2E;--cool:#5C93C4;--line:rgba(23,29,38,.14)}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Archivo',system-ui,sans-serif;background:var(--paper);color:#171D26;line-height:1.6;padding-bottom:100px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+h1{font-family:'Tanker';text-transform:uppercase;font-size:clamp(34px,5vw,56px);letter-spacing:1px}
+.intro{padding:60px 0 10px}
+.intro p{color:#525b68;max-width:60ch;margin-top:10px}
+.mark{margin-top:70px;border-top:2px solid #171D26;padding-top:28px}
+.mark h2{font-family:'Tanker';text-transform:uppercase;font-size:30px;letter-spacing:1px}
+.mark .why{color:#525b68;max-width:66ch;margin:8px 0 24px;font-size:15.5px}
+.panels{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media(max-width:760px){.panels{grid-template-columns:1fr}}
+.panel{border-radius:10px;display:flex;align-items:center;justify-content:center;min-height:300px;padding:40px}
+.panel.dark{background:var(--slate)}
+.panel.light{background:#fff;border:1px solid var(--line)}
+.panel svg{max-width:100%;height:auto}
+@media(max-width:760px){.panel{padding:28px 18px;min-height:240px}}
+.strip{margin-top:18px;display:grid;grid-template-columns:1fr auto;gap:18px}
+@media(max-width:760px){.strip{grid-template-columns:1fr}.navdemo .links span:not(.pill){display:none}.navdemo svg{max-width:70%;height:auto}}
+.navdemo{background:var(--slate);border-radius:10px;display:flex;align-items:center;padding:14px 22px;gap:20px}
+.navdemo .links{margin-left:auto;display:flex;gap:16px;align-items:center;font-family:'Barlow Semi Condensed';font-weight:600;letter-spacing:1.5px;text-transform:uppercase;font-size:12px;color:rgba(237,233,224,.7)}
+.navdemo .pill{background:var(--warm);color:#fff;padding:9px 14px;border-radius:4px;font-weight:700}
+.favdemo{background:#fff;border:1px solid var(--line);border-radius:10px;display:flex;align-items:center;justify-content:center;gap:18px;padding:14px 26px}
+.favdemo .f16 svg{width:16px;height:16px}
+.favdemo .f32 svg{width:32px;height:32px}
+.favdemo .f64 svg{width:64px;height:64px}
+.favdemo span{font-size:12px;color:#525b68}
+.tag{display:inline-block;font-family:'Barlow Semi Condensed';font-weight:700;letter-spacing:2px;text-transform:uppercase;font-size:12px;color:var(--warm);margin-bottom:6px}
+.pick{margin-top:80px;background:var(--slate);color:var(--linen);border-radius:12px;padding:40px 44px}
+.pick h2{font-family:'Tanker';text-transform:uppercase;font-size:28px;letter-spacing:1px}
+.pick p{color:rgba(237,233,224,.75);margin-top:8px;max-width:60ch}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="intro">
+  <h1>Loft logo lab &middot; round 3</h1>
+  <p>Five marks, all drawn as clean vectors. Each shown on dark and light, in the real nav, and at favicon sizes. Tell Claude the letter of the winner (or what to splice).</p>
+</div>
+
+<!-- ============ A. GABLE ============ -->
+<div class="mark" id="a">
+  <span class="tag">Mark A</span>
+  <h2>Gable: the approved crest, drawn right</h2>
+  <p class="why">The beveled two-tone roof you approved, rebuilt with symmetric geometry: equal pitch both sides, consistent bevel depth, clean ridge miter, pinstripe inset. Warm side heats, cool side cools.</p>
+  <div class="panels">
+    <div class="panel dark">
+      <svg viewBox="0 0 300 190" width="300" aria-label="Gable mark dark">
+        <g>
+          <polygon points="42,96 150,24 150,40 56,102" fill="#E06A2E"/>
+          <polygon points="150,24 258,96 244,102 150,40" fill="#5C93C4"/>
+          <polygon points="42,110 150,40 150,52 58,116" fill="#B8511F"/>
+          <polygon points="150,40 258,110 242,116 150,52" fill="#3E6E9E"/>
+          <line x1="62" y1="97" x2="146" y2="41" stroke="#EDE9E0" stroke-width="2.5"/>
+          <line x1="154" y1="41" x2="238" y2="97" stroke="#EDE9E0" stroke-width="2.5"/>
+        </g>
+        <text x="150" y="152" text-anchor="middle" font-family="Tanker" font-size="46" letter-spacing="7" fill="#EDE9E0">LOFT</text>
+        <text x="150" y="178" text-anchor="middle" font-family="Barlow Semi Condensed" font-weight="600" font-size="14" letter-spacing="8" fill="#8a94a0">MINI SPLITS</text>
+      </svg>
+    </div>
+    <div class="panel light">
+      <svg viewBox="0 0 300 190" width="300" aria-label="Gable mark light">
+        <g>
+          <polygon points="42,96 150,24 150,40 56,102" fill="#E06A2E"/>
+          <polygon points="150,24 258,96 244,102 150,40" fill="#5C93C4"/>
+          <polygon points="42,110 150,40 150,52 58,116" fill="#B8511F"/>
+          <polygon points="150,40 258,110 242,116 150,52" fill="#3E6E9E"/>
+          <line x1="62" y1="97" x2="146" y2="41" stroke="#F7F4ED" stroke-width="2.5"/>
+          <line x1="154" y1="41" x2="238" y2="97" stroke="#F7F4ED" stroke-width="2.5"/>
+        </g>
+        <text x="150" y="152" text-anchor="middle" font-family="Tanker" font-size="46" letter-spacing="7" fill="#171D26">LOFT</text>
+        <text x="150" y="178" text-anchor="middle" font-family="Barlow Semi Condensed" font-weight="600" font-size="14" letter-spacing="8" fill="#525b68">MINI SPLITS</text>
+      </svg>
+    </div>
+  </div>
+  <div class="strip">
+    <div class="navdemo">
+      <svg viewBox="0 0 258 64" height="42">
+        <g transform="translate(0,6)">
+          <polygon points="6,40 42,16 42,23 12,43" fill="#E06A2E"/>
+          <polygon points="42,16 78,40 71,43 42,23" fill="#5C93C4"/>
+        </g>
+        <text x="92" y="46" font-family="Tanker" font-size="38" letter-spacing="4" fill="#EDE9E0">LOFT</text>
+        <text x="206" y="32" font-family="Barlow Semi Condensed" font-weight="600" font-size="12" letter-spacing="3" fill="#8a94a0">MINI</text>
+        <text x="206" y="48" font-family="Barlow Semi Condensed" font-weight="600" font-size="12" letter-spacing="3" fill="#8a94a0">SPLITS</text>
+      </svg>
+      <div class="links"><span>Pricing</span><span>Reviews</span><span class="pill">Free quote</span></div>
+    </div>
+    <div class="favdemo">
+      <span class="f64"><svg viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#101722"/><polygon points="10,40 32,18 32,26 16,42" fill="#E06A2E"/><polygon points="32,18 54,40 48,42 32,26" fill="#5C93C4"/><rect x="20" y="46" width="24" height="3" fill="#EDE9E0"/></svg></span>
+      <span class="f32"><svg viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#101722"/><polygon points="10,40 32,18 32,26 16,42" fill="#E06A2E"/><polygon points="32,18 54,40 48,42 32,26" fill="#5C93C4"/><rect x="20" y="46" width="24" height="3" fill="#EDE9E0"/></svg></span>
+      <span class="f16"><svg viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#101722"/><polygon points="10,40 32,18 32,26 16,42" fill="#E06A2E"/><polygon points="32,18 54,40 48,42 32,26" fill="#5C93C4"/><rect x="20" y="46" width="24" height="3" fill="#EDE9E0"/></svg></span>
+      <span>64 / 32 / 16</span>
+    </div>
+  </div>
+</div>
+
+<!-- ============ B. HOMESTEAD ============ -->
+<div class="mark" id="b">
+  <span class="tag">Mark B</span>
+  <h2>Homestead: the roof wraps the name</h2>
+  <p class="why">A wide, low-pitch gable sheltering the wordmark, like the sign over a shop door. The house IS the logo. Quietest of the five, very sign-paintable.</p>
+  <div class="panels">
+    <div class="panel dark">
+      <svg viewBox="0 0 320 170" width="320">
+        <polygon points="18,84 160,26 302,84 302,96 160,40 18,96" fill="#E06A2E"/>
+        <polygon points="160,26 302,84 302,96 160,40" fill="#5C93C4"/>
+        <text x="160" y="138" text-anchor="middle" font-family="Tanker" font-size="52" letter-spacing="9" fill="#EDE9E0">LOFT</text>
+        <text x="160" y="162" text-anchor="middle" font-family="Barlow Semi Condensed" font-weight="600" font-size="12" letter-spacing="4.5" fill="#8a94a0">MINI SPLITS &middot; WICHITA KS</text>
+      </svg>
+    </div>
+    <div class="panel light">
+      <svg viewBox="0 0 320 170" width="320">
+        <polygon points="18,84 160,26 302,84 302,96 160,40 18,96" fill="#C0664A"/>
+        <polygon points="160,26 302,84 302,96 160,40" fill="#3E6E9E"/>
+        <text x="160" y="138" text-anchor="middle" font-family="Tanker" font-size="52" letter-spacing="9" fill="#171D26">LOFT</text>
+        <text x="160" y="162" text-anchor="middle" font-family="Barlow Semi Condensed" font-weight="600" font-size="12" letter-spacing="4.5" fill="#525b68">MINI SPLITS &middot; WICHITA KS</text>
+      </svg>
+    </div>
+  </div>
+  <div class="strip">
+    <div class="navdemo">
+      <svg viewBox="0 0 190 74" height="46">
+        <polygon points="8,34 95,10 182,34 182,41 95,19 8,41" fill="#E06A2E"/>
+        <polygon points="95,10 182,34 182,41 95,19" fill="#5C93C4"/>
+        <text x="95" y="68" text-anchor="middle" font-family="Tanker" font-size="30" letter-spacing="5" fill="#EDE9E0">LOFT</text>
+      </svg>
+      <div class="links"><span>Pricing</span><span>Reviews</span><span class="pill">Free quote</span></div>
+    </div>
+    <div class="favdemo">
+      <span class="f64"><svg viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#101722"/><polygon points="8,34 32,20 56,34 56,40 32,26 8,40" fill="#E06A2E"/><polygon points="32,20 56,34 56,40 32,26" fill="#5C93C4"/><text x="32" y="52" text-anchor="middle" font-family="Tanker" font-size="20" letter-spacing="1" fill="#EDE9E0">LOFT</text></svg></span>
+      <span class="f32"><svg viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#101722"/><polygon points="8,34 32,20 56,34 56,40 32,26 8,40" fill="#E06A2E"/><polygon points="32,20 56,34 56,40 32,26" fill="#5C93C4"/><text x="32" y="52" text-anchor="middle" font-family="Tanker" font-size="20" letter-spacing="1" fill="#EDE9E0">LOFT</text></svg></span>
+      <span class="f16"><svg viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#101722"/><polygon points="8,34 32,20 56,34 56,40 32,26 8,40" fill="#E06A2E"/><polygon points="32,20 56,34 56,40 32,26" fill="#5C93C4"/><text x="32" y="52" text-anchor="middle" font-family="Tanker" font-size="20" letter-spacing="1" fill="#EDE9E0">LOFT</text></svg></span>
+      <span>64 / 32 / 16</span>
+    </div>
+  </div>
+</div>
+
+<!-- ============ C. STAMP ============ -->
+<div class="mark" id="c">
+  <span class="tag">Mark C</span>
+  <h2>Stamp: the trade badge</h2>
+  <p class="why">Circular contractor stamp: roof at center, name in the ring. Reads like a quality seal on quotes, invoices, van doors, and cap fronts. The most blue-collar of the five.</p>
+  <div class="panels">
+    <div class="panel dark">
+      <svg viewBox="0 0 220 220" width="230">
+        <circle cx="110" cy="110" r="104" fill="none" stroke="#EDE9E0" stroke-width="3"/>
+        <circle cx="110" cy="110" r="78" fill="none" stroke="#EDE9E0" stroke-width="1.5"/>
+        <defs>
+          <path id="arcTop" d="M 110,110 m -91,0 a 91,91 0 1 1 182,0"/>
+          <path id="arcBot" d="M 110,110 m -91,0 a 91,91 0 1 0 182,0"/>
+        </defs>
+        <text font-family="Barlow Semi Condensed" font-weight="700" font-size="16" letter-spacing="4" fill="#EDE9E0"><textPath href="#arcTop" startOffset="50%" text-anchor="middle">HEATING + COOLING</textPath></text>
+        <text font-family="Barlow Semi Condensed" font-weight="700" font-size="17" letter-spacing="6" fill="#EDE9E0"><textPath href="#arcBot" startOffset="50%" text-anchor="middle">WICHITA &#9733; KANSAS</textPath></text>
+        <polygon points="58,106 110,66 110,76 68,110" fill="#E06A2E"/>
+        <polygon points="110,66 162,106 152,110 110,76" fill="#5C93C4"/>
+        <text x="110" y="146" text-anchor="middle" font-family="Tanker" font-size="40" letter-spacing="4" fill="#EDE9E0">LOFT</text>
+      </svg>
+    </div>
+    <div class="panel light">
+      <svg viewBox="0 0 220 220" width="230">
+        <circle cx="110" cy="110" r="104" fill="none" stroke="#171D26" stroke-width="3"/>
+        <circle cx="110" cy="110" r="78" fill="none" stroke="#171D26" stroke-width="1.5"/>
+        <defs>
+          <path id="arcTop2" d="M 110,110 m -91,0 a 91,91 0 1 1 182,0"/>
+          <path id="arcBot2" d="M 110,110 m -91,0 a 91,91 0 1 0 182,0"/>
+        </defs>
+        <text font-family="Barlow Semi Condensed" font-weight="700" font-size="16" letter-spacing="4" fill="#171D26"><textPath href="#arcTop2" startOffset="50%" text-anchor="middle">HEATING + COOLING</textPath></text>
+        <text font-family="Barlow Semi Condensed" font-weight="700" font-size="17" letter-spacing="6" fill="#171D26"><textPath href="#arcBot2" startOffset="50%" text-anchor="middle">WICHITA &#9733; KANSAS</textPath></text>
+        <polygon points="58,106 110,66 110,76 68,110" fill="#C0664A"/>
+        <polygon points="110,66 162,106 152,110 110,76" fill="#3E6E9E"/>
+        <text x="110" y="146" text-anchor="middle" font-family="Tanker" font-size="40" letter-spacing="4" fill="#171D26">LOFT</text>
+      </svg>
+    </div>
+  </div>
+  <div class="strip">
+    <div class="navdemo">
+      <svg viewBox="0 0 64 64" height="44">
+        <circle cx="32" cy="32" r="29" fill="none" stroke="#EDE9E0" stroke-width="2"/>
+        <polygon points="16,30 32,18 32,22 20,32" fill="#E06A2E"/>
+        <polygon points="32,18 48,30 44,32 32,22" fill="#5C93C4"/>
+        <text x="32" y="44" text-anchor="middle" font-family="Tanker" font-size="15" letter-spacing="1" fill="#EDE9E0">LOFT</text>
+      </svg>
+      <svg viewBox="0 0 118 40" height="30" style="margin-left:-6px">
+        <text x="0" y="30" font-family="Tanker" font-size="28" letter-spacing="3" fill="#EDE9E0">LOFT</text>
+      </svg>
+      <div class="links"><span>Pricing</span><span>Reviews</span><span class="pill">Free quote</span></div>
+    </div>
+    <div class="favdemo">
+      <span class="f64"><svg viewBox="0 0 64 64"><rect width="64" height="64" rx="32" fill="#101722"/><circle cx="32" cy="32" r="27" fill="none" stroke="#EDE9E0" stroke-width="2"/><polygon points="17,31 32,19 32,23 21,33" fill="#E06A2E"/><polygon points="32,19 47,31 43,33 32,23" fill="#5C93C4"/><text x="32" y="45" text-anchor="middle" font-family="Tanker" font-size="14" fill="#EDE9E0">LOFT</text></svg></span>
+      <span class="f32"><svg viewBox="0 0 64 64"><rect width="64" height="64" rx="32" fill="#101722"/><circle cx="32" cy="32" r="27" fill="none" stroke="#EDE9E0" stroke-width="2"/><polygon points="17,31 32,19 32,23 21,33" fill="#E06A2E"/><polygon points="32,19 47,31 43,33 32,23" fill="#5C93C4"/><text x="32" y="45" text-anchor="middle" font-family="Tanker" font-size="14" fill="#EDE9E0">LOFT</text></svg></span>
+      <span class="f16"><svg viewBox="0 0 64 64"><rect width="64" height="64" rx="32" fill="#101722"/><circle cx="32" cy="32" r="27" fill="none" stroke="#EDE9E0" stroke-width="2"/><polygon points="17,31 32,19 32,23 21,33" fill="#E06A2E"/><polygon points="32,19 47,31 43,33 32,23" fill="#5C93C4"/></svg></span>
+      <span>64 / 32 / 16</span>
+    </div>
+  </div>
+</div>
+
+<!-- ============ D. PEAK ============ -->
+<div class="mark" id="d">
+  <span class="tag">Mark D</span>
+  <h2>Peak: one chevron, zero decoration</h2>
+  <p class="why">Strip everything: the wordmark plus a single warm chevron peak over the O, the roof reduced to its last possible stroke. The most modern and the most premium. Scales anywhere.</p>
+  <div class="panels">
+    <div class="panel dark">
+      <svg viewBox="0 0 300 150" width="300">
+        <text x="150" y="102" text-anchor="middle" font-family="Tanker" font-size="64" letter-spacing="8" fill="#EDE9E0">LOFT</text>
+        <polyline points="111,38 134,20 157,38" fill="none" stroke="#E06A2E" stroke-width="9" stroke-linecap="square"/>
+        <text x="150" y="136" text-anchor="middle" font-family="Barlow Semi Condensed" font-weight="600" font-size="14" letter-spacing="9" fill="#8a94a0">MINI SPLITS</text>
+      </svg>
+    </div>
+    <div class="panel light">
+      <svg viewBox="0 0 300 150" width="300">
+        <text x="150" y="102" text-anchor="middle" font-family="Tanker" font-size="64" letter-spacing="8" fill="#171D26">LOFT</text>
+        <polyline points="111,38 134,20 157,38" fill="none" stroke="#E06A2E" stroke-width="9" stroke-linecap="square"/>
+        <text x="150" y="136" text-anchor="middle" font-family="Barlow Semi Condensed" font-weight="600" font-size="14" letter-spacing="9" fill="#525b68">MINI SPLITS</text>
+      </svg>
+    </div>
+  </div>
+  <div class="strip">
+    <div class="navdemo">
+      <svg viewBox="0 0 210 56" height="40">
+        <text x="0" y="46" font-family="Tanker" font-size="40" letter-spacing="5" fill="#EDE9E0">LOFT</text>
+        <polyline points="27,16 42,5 57,16" fill="none" stroke="#E06A2E" stroke-width="6" stroke-linecap="square"/>
+        <text x="152" y="32" font-family="Barlow Semi Condensed" font-weight="600" font-size="11" letter-spacing="2.5" fill="#8a94a0">MINI</text>
+        <text x="152" y="46" font-family="Barlow Semi Condensed" font-weight="600" font-size="11" letter-spacing="2.5" fill="#8a94a0">SPLITS</text>
+      </svg>
+      <div class="links"><span>Pricing</span><span>Reviews</span><span class="pill">Free quote</span></div>
+    </div>
+    <div class="favdemo">
+      <span class="f64"><svg viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#101722"/><polyline points="18,34 32,22 46,34" fill="none" stroke="#E06A2E" stroke-width="7" stroke-linecap="square"/><text x="32" y="52" text-anchor="middle" font-family="Tanker" font-size="17" letter-spacing="1" fill="#EDE9E0">LOFT</text></svg></span>
+      <span class="f32"><svg viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#101722"/><polyline points="18,34 32,22 46,34" fill="none" stroke="#E06A2E" stroke-width="7" stroke-linecap="square"/><text x="32" y="52" text-anchor="middle" font-family="Tanker" font-size="17" letter-spacing="1" fill="#EDE9E0">LOFT</text></svg></span>
+      <span class="f16"><svg viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#101722"/><polyline points="16,38 32,24 48,38" fill="none" stroke="#E06A2E" stroke-width="9" stroke-linecap="square"/></svg></span>
+      <span>64 / 32 / 16</span>
+    </div>
+  </div>
+</div>
+
+<!-- ============ E. LOUVER ============ -->
+<div class="mark" id="e">
+  <span class="tag">Mark E</span>
+  <h2>Louver: the house that breathes</h2>
+  <p class="why">Roof over three louver slats: a house and a mini split vent in one shape. The slats are the product. Strong app icon, strong embroidery, pairs with a plain wordmark.</p>
+  <div class="panels">
+    <div class="panel dark">
+      <svg viewBox="0 0 300 170" width="300">
+        <g transform="translate(96,10)">
+          <polygon points="0,54 54,12 54,22 8,58" fill="#E06A2E"/>
+          <polygon points="54,12 108,54 100,58 54,22" fill="#5C93C4"/>
+          <rect x="22" y="66" width="64" height="6" fill="#EDE9E0"/>
+          <rect x="30" y="78" width="48" height="6" fill="#EDE9E0" opacity=".75"/>
+          <rect x="38" y="90" width="32" height="6" fill="#EDE9E0" opacity=".5"/>
+        </g>
+        <text x="150" y="142" text-anchor="middle" font-family="Tanker" font-size="42" letter-spacing="7" fill="#EDE9E0">LOFT</text>
+        <text x="150" y="164" text-anchor="middle" font-family="Barlow Semi Condensed" font-weight="600" font-size="13" letter-spacing="8" fill="#8a94a0">MINI SPLITS</text>
+      </svg>
+    </div>
+    <div class="panel light">
+      <svg viewBox="0 0 300 170" width="300">
+        <g transform="translate(96,10)">
+          <polygon points="0,54 54,12 54,22 8,58" fill="#C0664A"/>
+          <polygon points="54,12 108,54 100,58 54,22" fill="#3E6E9E"/>
+          <rect x="22" y="66" width="64" height="6" fill="#171D26"/>
+          <rect x="30" y="78" width="48" height="6" fill="#171D26" opacity=".7"/>
+          <rect x="38" y="90" width="32" height="6" fill="#171D26" opacity=".45"/>
+        </g>
+        <text x="150" y="142" text-anchor="middle" font-family="Tanker" font-size="42" letter-spacing="7" fill="#171D26">LOFT</text>
+        <text x="150" y="164" text-anchor="middle" font-family="Barlow Semi Condensed" font-weight="600" font-size="13" letter-spacing="8" fill="#525b68">MINI SPLITS</text>
+      </svg>
+    </div>
+  </div>
+  <div class="strip">
+    <div class="navdemo">
+      <svg viewBox="0 0 224 60" height="42">
+        <g transform="translate(0,4)">
+          <polygon points="0,30 30,7 30,13 5,32" fill="#E06A2E"/>
+          <polygon points="30,7 60,30 55,32 30,13" fill="#5C93C4"/>
+          <rect x="12" y="37" width="36" height="4" fill="#EDE9E0"/>
+          <rect x="17" y="44" width="26" height="4" fill="#EDE9E0" opacity=".7"/>
+        </g>
+        <text x="74" y="44" font-family="Tanker" font-size="34" letter-spacing="4" fill="#EDE9E0">LOFT</text>
+        <text x="172" y="30" font-family="Barlow Semi Condensed" font-weight="600" font-size="11" letter-spacing="2.5" fill="#8a94a0">MINI</text>
+        <text x="172" y="44" font-family="Barlow Semi Condensed" font-weight="600" font-size="11" letter-spacing="2.5" fill="#8a94a0">SPLITS</text>
+      </svg>
+      <div class="links"><span>Pricing</span><span>Reviews</span><span class="pill">Free quote</span></div>
+    </div>
+    <div class="favdemo">
+      <span class="f64"><svg viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#101722"/><polygon points="10,34 32,17 32,23 15,36" fill="#E06A2E"/><polygon points="32,17 54,34 49,36 32,23" fill="#5C93C4"/><rect x="19" y="41" width="26" height="4" fill="#EDE9E0"/><rect x="23" y="48" width="18" height="4" fill="#EDE9E0" opacity=".7"/></svg></span>
+      <span class="f32"><svg viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#101722"/><polygon points="10,34 32,17 32,23 15,36" fill="#E06A2E"/><polygon points="32,17 54,34 49,36 32,23" fill="#5C93C4"/><rect x="19" y="41" width="26" height="4" fill="#EDE9E0"/><rect x="23" y="48" width="18" height="4" fill="#EDE9E0" opacity=".7"/></svg></span>
+      <span class="f16"><svg viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#101722"/><polygon points="10,34 32,17 32,23 15,36" fill="#E06A2E"/><polygon points="32,17 54,34 49,36 32,23" fill="#5C93C4"/><rect x="19" y="41" width="26" height="4" fill="#EDE9E0"/></svg></span>
+      <span>64 / 32 / 16</span>
+    </div>
+  </div>
+</div>
+
+<div class="pick">
+  <h2>How to pick</h2>
+  <p>Reply to Claude with the letter (A to E). Mixing is allowed: for example "D wordmark on the site, E as the app icon and favicon." The winner gets rolled across the site, favicon, OG image, and the brand folder as final SVG + PNG exports.</p>
+</div>
+
+</div>
+</body>
+</html>
