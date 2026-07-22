@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 560">
+<defs><linearGradient id="warm" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#C0664A"/><stop offset="1" stop-color="#E8823E"/></linearGradient><linearGradient id="cool" x1="1" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#38708C"/><stop offset="1" stop-color="#549CBE"/></linearGradient></defs>
+<rect width="680" height="560" fill="#141b24"/>
+<polygon points="54.0,254 340.0,92 340.0,136 54.0,298" fill="url(#warm)"/>
+<polygon points="340.0,92 626.0,254 626.0,298 340.0,136" fill="url(#cool)"/>
+<line x1="340.0" y1="92" x2="340.0" y2="136" stroke="#141b24" stroke-width="3"/>
+<line x1="74.0" y1="254.67132867132867" x2="334.0" y2="104" stroke="#EDE9E0" stroke-width="3.5"/>
+<line x1="346.0" y1="104" x2="606.0" y2="254.67132867132867" stroke="#EDE9E0" stroke-width="3.5"/>
+<rect x="54.0" y="292" width="20" height="6" fill="#C0664A"/><rect x="606.0" y="292" width="20" height="6" fill="#38708C"/>
+<text x="340.0" y="352" text-anchor="middle" font-family="Archivo, sans-serif" font-weight="900" font-size="140" letter-spacing="3" fill="#EDE9E0">LOFT</text>
+<text x="340.0" y="396" text-anchor="middle" font-family="Barlow Semi Condensed, sans-serif" font-weight="700" font-size="41" letter-spacing="17" fill="#EDE9E0">MINI SPLITS</text>
+<g><path d="M 88.0 452 L 592.0 452 L 574.0 502 L 106.0 502 Z" fill="none" stroke="#EDE9E0" stroke-width="2.5"/><path d="M 88.0 452 L 60.0 467 L 76.0 490 L 106.0 502" fill="none" stroke="#EDE9E0" stroke-width="2.5"/><path d="M 592.0 452 L 620.0 467 L 604.0 490 L 574.0 502" fill="none" stroke="#EDE9E0" stroke-width="2.5"/></g>
+<text x="188.0" y="486" text-anchor="middle" font-family="Barlow Semi Condensed, sans-serif" font-weight="700" font-size="23" letter-spacing="3" fill="#EDE9E0">WICHITA</text>
+<text x="340.0" y="486" text-anchor="middle" font-family="Barlow Semi Condensed, sans-serif" font-weight="700" font-size="23" letter-spacing="3" fill="#EDE9E0">OMAHA</text>
+<text x="492.0" y="486" text-anchor="middle" font-family="Barlow Semi Condensed, sans-serif" font-weight="700" font-size="23" letter-spacing="3" fill="#EDE9E0">OZARKS</text>
+<polygon points="264.0,467.0 266.5,473.6 273.5,473.9 268.0,478.3 269.9,485.1 264.0,481.2 258.1,485.1 260.0,478.3 254.5,473.9 261.5,473.6" fill="#E8B15A"/>
+<polygon points="416.0,467.0 418.5,473.6 425.5,473.9 420.0,478.3 421.9,485.1 416.0,481.2 410.1,485.1 412.0,478.3 406.5,473.9 413.5,473.6" fill="#E8B15A"/>
+</svg>

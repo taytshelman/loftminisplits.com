@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 120">
+<polygon points="8,84 92,22 92,34 20,88" fill="#E06A2E"/>
+<polygon points="92,22 176,84 164,88 92,34" fill="#5C93C4"/>
+<polygon points="8,84 92,34 92,42 24,90" fill="#B8511F" opacity="0.85"/>
+<text x="200" y="72" font-family="Archivo" font-weight="900" font-size="56" letter-spacing="2" fill="#EDE9E0">LOFT</text>
+<text x="200" y="102" font-family="Barlow Semi Condensed" font-weight="700" font-size="24" letter-spacing="10" fill="#93a1ad">MINI SPLITS</text>
+</svg>
