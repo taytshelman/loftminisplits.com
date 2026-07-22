@@ -5,6 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Mini Split Installation Cost in Wichita, KS (2026 Prices) | Loft Mini Splits</title>
 <meta name="description" content="Real 2026 mini split prices for Wichita: single-zone installs from $985, typical Midwest ranges by zone count, what changes the price, and the Evergy rebate. Updated July 21, 2026.">
+<meta property="og:title" content="Mini Split Installation Cost in Wichita, KS (2026 Prices)">
+<meta property="og:description" content="Real 2026 numbers: Loft single-zone installs from $985, Midwest market ranges, sizing math for Kansas, and the Evergy rebate.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://loftminisplits.com/mini-split-cost-wichita.html">
+<meta property="og:image" content="https://loftminisplits.com/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://loftminisplits.com/assets/og.jpg">
+<meta name="theme-color" content="#101722">
 <link rel="canonical" href="https://loftminisplits.com/mini-split-cost-wichita.html">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <script type="application/ld+json">
@@ -34,6 +44,7 @@
 }
 </script>
 <style>
+@font-face{font-family:'Tanker';src:url('assets/fonts/Tanker.ttf') format('truetype');font-weight:400;font-display:swap}
 @font-face{font-family:'Fraunces';src:url('assets/fonts/Fraunces.ttf') format('truetype');font-weight:300 900;font-display:swap}
 @font-face{font-family:'Archivo';src:url('assets/fonts/Archivo.ttf') format('truetype');font-weight:100 900;font-display:swap}
 @font-face{font-family:'Barlow Semi Condensed';src:url('assets/fonts/BarlowSemiCondensed-SemiBold.ttf') format('truetype');font-weight:600;font-display:swap}
@@ -43,7 +54,7 @@
   --line:rgba(23,29,38,.14); --gold:#D9A94F; --maxw:1140px;
 }
 *{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
+
 body{font-family:'Archivo',system-ui,sans-serif;background:var(--paper);color:var(--ink);line-height:1.7;-webkit-font-smoothing:antialiased}
 img{max-width:100%;height:auto;display:block}
 .wrap{max-width:var(--maxw);margin:0 auto;padding:0 26px}
@@ -51,15 +62,15 @@ img{max-width:100%;height:auto;display:block}
 .eyebrow{font-family:'Barlow Semi Condensed';font-weight:600;letter-spacing:3px;text-transform:uppercase;font-size:12.5px}
 header{background:var(--slate)}
 .nav{display:flex;align-items:center;padding:20px 0;gap:30px}
-.brand{display:flex;flex-direction:column;align-items:center;gap:3px;text-decoration:none}
-.brand svg{width:64px;height:26px}
-.brand .n{color:var(--linen);font-weight:900;font-size:17px;letter-spacing:4px;text-align:center}
-.brand .n small{display:block;font-family:'Barlow Semi Condensed';font-weight:600;font-size:8.5px;letter-spacing:4.5px;color:rgba(237,233,224,.6);margin-top:1px}
+.brand{display:block;text-decoration:none}
+.brand svg{width:96px;height:60px;display:block}
+
+
 .nav nav{margin-left:auto;display:flex;gap:24px;align-items:center}
 .nav nav a{color:rgba(237,233,224,.75);text-decoration:none;font-size:14.5px}
 .nav nav a:hover{color:var(--linen)}
 .nav .tel{color:var(--linen);font-weight:700;border:1px solid rgba(237,233,224,.35);padding:9px 18px;border-radius:99px}
-@media(max-width:860px){.nav nav a:not(.tel){display:none}}
+@media(max-width:860px){.nav nav a:not(.tel){display:none}.brand svg{width:96px;height:60px;display:block}.nav .tel{padding:8px 12px;font-size:13.5px}}
 
 .pagehero{background:var(--slate);color:var(--linen);padding:72px 0 64px}
 .pagehero .eyebrow{color:var(--gold)}
@@ -75,9 +86,10 @@ article p{margin:16px 0;color:#2a3340;max-width:72ch}
 article p.dim{color:var(--ink-dim);font-size:14px}
 article a{color:var(--warm);font-weight:600}
 .tablewrap{overflow-x:auto;margin:26px 0;border:1px solid var(--line);border-radius:10px;background:#fff}
-table{width:100%;border-collapse:collapse;font-size:15px;min-width:520px}
+table{width:100%;border-collapse:collapse;font-size:15px;min-width:480px}
 th{background:var(--slate);color:var(--linen);text-align:left;padding:13px 18px;font-family:'Barlow Semi Condensed';font-weight:600;letter-spacing:1.5px;text-transform:uppercase;font-size:12.5px}
 td{padding:13px 18px;border-top:1px solid var(--line);font-variant-numeric:tabular-nums}
+@media(max-width:480px){th,td{padding:11px 12px;font-size:13.5px}table{min-width:440px}}
 tr:hover td{background:#faf8f2}
 td b{font-weight:800}
 .hl td{background:rgba(192,102,74,.08)}
@@ -99,6 +111,17 @@ td b{font-weight:800}
 .faq summary::after{content:"+";font-family:'Fraunces';font-size:22px;color:var(--warm)}
 .faq details[open] summary::after{content:"\00d7"}
 .faq .a{padding:0 4px 22px;color:var(--ink-dim);font-size:15.5px;max-width:68ch}
+
+/* ---------- motion ---------- */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s cubic-bezier(.2,.6,.2,1),transform .7s cubic-bezier(.2,.6,.2,1)}
+.reveal.in{opacity:1;transform:none}
+.hero .bg img{animation:heroZoom 16s ease-out both}
+@keyframes heroZoom{from{transform:scale(1.07)}to{transform:scale(1)}}
+.hero .eyebrow,.hero h1,.hero .sub,.hero .row{animation:riseIn .8s cubic-bezier(.2,.6,.2,1) both}
+.hero h1{animation-delay:.12s}.hero .sub{animation-delay:.24s}.hero .row{animation-delay:.38s}
+@keyframes riseIn{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}.hero .bg img,.hero .eyebrow,.hero h1,.hero .sub,.hero .row{animation:none}}
+
 footer{background:var(--slate);color:rgba(237,233,224,.45);padding:28px 0;font-size:14px}
 footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 footer a{color:rgba(237,233,224,.7);text-decoration:none}
@@ -109,12 +132,16 @@ footer a{color:rgba(237,233,224,.7);text-decoration:none}
 <header>
   <div class="wrap nav">
     <a class="brand" href="index.html">
-      <svg viewBox="0 0 184 74" aria-hidden="true">
-        <polygon points="6,64 92,8 92,20 18,68" fill="#E06A2E"/>
-        <polygon points="92,8 178,64 166,68 92,20" fill="#5C93C4"/>
-        <polygon points="6,64 92,20 92,27 22,70" fill="#B8511F" opacity=".85"/>
+      <svg viewBox="0 0 240 150" aria-hidden="true">
+        <g transform="translate(64,4)">
+          <polygon points="6,54 56,14 56,22 12,57" fill="#E06A2E"/>
+          <polygon points="56,14 106,54 100,57 56,22" fill="#5C93C4"/>
+          <polygon points="6,54 56,22 56,26 14,60" fill="#B8511F"/>
+          <polygon points="56,22 106,54 101,60 56,26" fill="#3E6E9E"/>
+        </g>
+        <text x="120" y="106" text-anchor="middle" font-family="Tanker" font-size="44" letter-spacing="7" fill="#EDE9E0">LOFT</text>
+        <text x="120" y="136" text-anchor="middle" font-family="Barlow Semi Condensed" font-weight="600" font-size="15" letter-spacing="9" fill="#8a94a0">MINI SPLITS</text>
       </svg>
-      <span class="n">LOFT<small>MINI SPLITS</small></span>
     </a>
     <nav>
       <a href="index.html#pricing">Pricing</a>
@@ -263,5 +290,21 @@ footer a{color:rgba(237,233,224,.7);text-decoration:none}
   </div>
 </footer>
 
+<script>
+(function () {
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var els = document.querySelectorAll('article h2,.tablewrap,.callout,.photo,.cta-band,.faq details,.pagehero .answer');
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (en) {
+      if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); }
+    });
+  }, { threshold: 0.15 });
+  els.forEach(function (el, i) {
+    el.classList.add('reveal');
+    el.style.transitionDelay = (i % 3) * 90 + 'ms';
+    io.observe(el);
+  });
+})();
+</script>
 </body>
 </html>

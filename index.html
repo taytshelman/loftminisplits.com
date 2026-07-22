@@ -5,6 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Loft Mini Splits | Ductless Heating + Cooling in Wichita</title>
 <meta name="description" content="Ductless mini split installation from $985, installed in about two hours. One quiet system that heats through January and cools through July. Serving Wichita and 150 miles around it.">
+<meta property="og:title" content="Loft Mini Splits | Ductless Heating + Cooling in Wichita">
+<meta property="og:description" content="One quiet system that heats through January and cools through July. Single-room installs from $985, installed in about two hours.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://loftminisplits.com/">
+<meta property="og:image" content="https://loftminisplits.com/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://loftminisplits.com/assets/og.jpg">
+<meta name="theme-color" content="#101722">
 <link rel="canonical" href="https://loftminisplits.com/">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <script type="application/ld+json">
@@ -36,6 +46,7 @@
 }
 </script>
 <style>
+@font-face{font-family:'Tanker';src:url('assets/fonts/Tanker.ttf') format('truetype');font-weight:400;font-display:swap}
 @font-face{font-family:'Fraunces';src:url('assets/fonts/Fraunces.ttf') format('truetype');font-weight:300 900;font-display:swap}
 @font-face{font-family:'Archivo';src:url('assets/fonts/Archivo.ttf') format('truetype');font-weight:100 900;font-display:swap}
 @font-face{font-family:'Barlow Semi Condensed';src:url('assets/fonts/BarlowSemiCondensed-SemiBold.ttf') format('truetype');font-weight:600;font-display:swap}
@@ -46,7 +57,7 @@
   --maxw:1140px;
 }
 *{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
+
 body{font-family:'Archivo',system-ui,sans-serif;font-weight:400;background:var(--paper);color:var(--ink);line-height:1.65;-webkit-font-smoothing:antialiased}
 img{max-width:100%;height:auto;display:block}
 .wrap{max-width:var(--maxw);margin:0 auto;padding:0 26px}
@@ -56,34 +67,46 @@ img{max-width:100%;height:auto;display:block}
 /* ---------- nav ---------- */
 header{position:absolute;inset:0 0 auto 0;z-index:20}
 .nav{display:flex;align-items:center;padding:26px 0;gap:30px}
-.brand{display:flex;flex-direction:column;align-items:center;gap:4px;text-decoration:none}
-.brand svg{width:74px;height:30px}
-.brand .n{color:var(--linen);font-weight:900;font-size:20px;letter-spacing:5px;text-align:center}
-.brand .n small{display:block;font-family:'Barlow Semi Condensed';font-weight:600;font-size:9.5px;letter-spacing:5px;color:rgba(237,233,224,.6);margin-top:2px;text-align:center}
+.brand{display:block;text-decoration:none}
+.brand svg{width:108px;height:68px;display:block}
+
+
 .nav nav{margin-left:auto;display:flex;gap:26px;align-items:center}
 .nav nav a{color:rgba(237,233,224,.75);text-decoration:none;font-size:14.5px;letter-spacing:.3px}
 .nav nav a:hover{color:var(--linen)}
 .nav .tel{color:var(--linen);font-weight:700;border:1px solid rgba(237,233,224,.35);padding:10px 20px;border-radius:99px}
 .nav .tel:hover{background:rgba(237,233,224,.1)}
-@media(max-width:860px){.nav nav a:not(.tel){display:none}}
+@media(max-width:860px){.nav nav a:not(.tel){display:none}.nav .tel{background:var(--linen);color:var(--ink);border-color:var(--linen);font-weight:800}.brand svg{width:108px;height:68px;display:block}.nav .tel{padding:8px 14px;font-size:14px}.nav{padding:16px 0}}
 
 /* ---------- hero ---------- */
-.hero{position:relative;min-height:92vh;display:flex;align-items:flex-end;color:var(--linen);isolation:isolate}
+.hero{position:relative;min-height:92vh;min-height:92svh;display:flex;align-items:flex-end;color:var(--linen);isolation:isolate}
 .hero .bg{position:absolute;inset:0;z-index:-2}
 .hero .bg img{width:100%;height:100%;object-fit:cover}
+@media(max-width:600px){.hero .bg img{object-position:12% 35%}}
 .hero::after{content:"";position:absolute;inset:0;z-index:-1;
- background:linear-gradient(to top,rgba(10,14,20,.88) 0%,rgba(10,14,20,.35) 45%,rgba(10,14,20,.25) 100%)}
+ background:linear-gradient(to top,rgba(10,14,20,.92) 0%,rgba(10,14,20,.55) 48%,rgba(10,14,20,.3) 100%)}
 .hero .wrap{padding-bottom:84px;padding-top:160px}
-.hero .eyebrow{color:var(--gold)}
-.hero h1{font-family:'Fraunces',serif;font-weight:600;font-size:clamp(38px,6.4vw,84px);line-height:1.02;letter-spacing:-.5px;margin-top:14px;max-width:13ch;text-wrap:balance}
+.hero .eyebrow{color:var(--linen);text-shadow:0 1px 8px rgba(10,14,20,.8)}
+.hero h1{font-family:'Fraunces',serif;font-weight:600;text-shadow:0 2px 18px rgba(10,14,20,.55);font-size:clamp(38px,6.4vw,84px);line-height:1.02;letter-spacing:-.5px;margin-top:14px;max-width:13ch;text-wrap:balance}
 .hero h1 em{font-style:italic;color:#E8B98F}
-.hero .sub{margin-top:22px;font-size:18.5px;color:rgba(237,233,224,.85);max-width:52ch}
+.hero .sub{margin-top:22px;font-size:18.5px;color:rgba(237,233,224,.92);max-width:52ch;text-shadow:0 1px 12px rgba(10,14,20,.7)}
 .hero .row{margin-top:34px;display:flex;align-items:center;gap:26px;flex-wrap:wrap}
 .btn{display:inline-block;text-decoration:none;font-weight:700;letter-spacing:.3px}
 .btn-solid{background:var(--linen);color:var(--ink);padding:17px 34px;border-radius:99px;font-size:16.5px}
 .btn-solid:hover{background:#fff}
 .hero .from{font-size:15px;color:rgba(237,233,224,.75)}
 .hero .from b{color:var(--linen);font-size:17px}
+
+
+/* ---------- motion ---------- */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s cubic-bezier(.2,.6,.2,1),transform .7s cubic-bezier(.2,.6,.2,1)}
+.reveal.in{opacity:1;transform:none}
+.hero .bg img{animation:heroZoom 16s ease-out both}
+@keyframes heroZoom{from{transform:scale(1.07)}to{transform:scale(1)}}
+.hero .eyebrow,.hero h1,.hero .sub,.hero .row{animation:riseIn .8s cubic-bezier(.2,.6,.2,1) both}
+.hero h1{animation-delay:.12s}.hero .sub{animation-delay:.24s}.hero .row{animation-delay:.38s}
+@keyframes riseIn{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}.hero .bg img,.hero .eyebrow,.hero h1,.hero .sub,.hero .row{animation:none}}
 
 /* ---------- statement ---------- */
 .statement{padding:110px 0 96px}
@@ -172,9 +195,11 @@ header{position:absolute;inset:0 0 auto 0;z-index:20}
 .quote h2{font-family:'Fraunces',serif;font-weight:600;font-size:clamp(28px,3.6vw,44px);line-height:1.1;margin-top:12px;letter-spacing:-.3px}
 .qintro{margin-top:14px;color:var(--ink-dim);font-size:16px;max-width:38ch}
 .qform{display:flex;flex-direction:column;gap:18px}
+.qform label[hidden]{display:none}
 .qform label{display:flex;flex-direction:column;gap:7px;font-family:'Barlow Semi Condensed';font-weight:600;font-size:13px;letter-spacing:1.6px;text-transform:uppercase;color:var(--ink-dim)}
-.qform input,.qform textarea{font-family:'Archivo';font-size:16px;padding:14px 16px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink)}
-.qform input:focus,.qform textarea:focus{outline:2px solid var(--warm);outline-offset:1px;border-color:transparent}
+.qform input,.qform textarea,.qform select{font-family:'Archivo';font-size:16px;padding:14px 16px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);width:100%;appearance:none;-webkit-appearance:none}
+.qform select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23C0664A' stroke-width='2' fill='none'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 16px center}
+.qform input:focus,.qform textarea:focus,.qform select:focus{outline:2px solid var(--warm);outline-offset:1px;border-color:transparent}
 .frow{display:grid;grid-template-columns:1fr 1fr;gap:18px}
 @media(max-width:560px){.frow{grid-template-columns:1fr}}
 .btn-warm{background:var(--warm);color:#fff;padding:16px 30px;border-radius:99px;border:0;font-size:16.5px;font-weight:700;cursor:pointer;font-family:'Archivo'}
@@ -199,12 +224,16 @@ footer a{color:rgba(237,233,224,.7);text-decoration:none}
 <header>
   <div class="wrap nav">
     <a class="brand" href="/">
-      <svg viewBox="0 0 184 74" aria-hidden="true">
-        <polygon points="6,64 92,8 92,20 18,68" fill="#E06A2E"/>
-        <polygon points="92,8 178,64 166,68 92,20" fill="#5C93C4"/>
-        <polygon points="6,64 92,20 92,27 22,70" fill="#B8511F" opacity=".85"/>
+      <svg viewBox="0 0 240 150" aria-hidden="true">
+        <g transform="translate(64,4)">
+          <polygon points="6,54 56,14 56,22 12,57" fill="#E06A2E"/>
+          <polygon points="56,14 106,54 100,57 56,22" fill="#5C93C4"/>
+          <polygon points="6,54 56,22 56,26 14,60" fill="#B8511F"/>
+          <polygon points="56,22 106,54 101,60 56,26" fill="#3E6E9E"/>
+        </g>
+        <text x="120" y="106" text-anchor="middle" font-family="Tanker" font-size="44" letter-spacing="7" fill="#EDE9E0">LOFT</text>
+        <text x="120" y="136" text-anchor="middle" font-family="Barlow Semi Condensed" font-weight="600" font-size="15" letter-spacing="9" fill="#8a94a0">MINI SPLITS</text>
       </svg>
-      <span class="n">LOFT<small>MINI SPLITS</small></span>
     </a>
     <nav>
       <a href="#pricing">Pricing</a>
@@ -372,13 +401,28 @@ footer a{color:rgba(237,233,224,.7);text-decoration:none}
       <h2>Tell us about your rooms.</h2>
       <p class="qintro">Takes about a minute. We reply with a real number, usually the same day.</p>
     </div>
-    <form class="qform" method="POST" action="#" data-todo="wire to GHL form endpoint before launch">
+    <form class="qform" name="quote" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="quote">
       <div class="frow">
         <label>Name<input type="text" name="name" required autocomplete="name"></label>
         <label>Phone<input type="tel" name="phone" required autocomplete="tel"></label>
       </div>
       <label>Town or zip<input type="text" name="zip" required autocomplete="postal-code"></label>
-      <label>Which rooms run too hot or too cold?<textarea name="rooms" rows="3" placeholder="Example: upstairs bedroom and the garage shop"></textarea></label>
+      <label>What do you want heated and cooled?
+        <select name="space" id="space" required>
+          <option value="" disabled selected>Choose one</option>
+          <option>Whole property</option>
+          <option>Bedroom</option>
+          <option>Living room</option>
+          <option>Garage or shop</option>
+          <option>Addition or sunroom</option>
+          <option>Rental or Airbnb</option>
+          <option>Something else</option>
+        </select>
+      </label>
+      <label id="sqftwrap" hidden>Approximate square footage?
+        <input type="text" name="sqft" id="sqft" inputmode="numeric" placeholder="Example: 1,400">
+      </label>
       <button type="submit" class="btn btn-warm">Send my free quote</button>
       <div class="qnote">Prefer to talk? <a href="tel:+13165550100">(316) 555&#8209;0100</a></div>
     </form>
@@ -404,5 +448,37 @@ footer a{color:rgba(237,233,224,.7);text-decoration:none}
   </div>
 </footer>
 
+<script>
+document.getElementById('space').addEventListener('change', function () {
+  var big = this.value === 'Whole property' || this.value === 'Garage or shop';
+  document.getElementById('sqftwrap').hidden = !big;
+  if (!big) document.getElementById('sqft').value = '';
+});
+</script>
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+  a.addEventListener('click', function (e) {
+    var el = document.querySelector(a.getAttribute('href'));
+    if (el) { e.preventDefault(); el.scrollIntoView({ behavior: 'smooth' }); }
+  });
+});
+if (location.hash) history.replaceState(null, '', location.pathname);
+</script>
+<script>
+(function () {
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var els = document.querySelectorAll('.sec-h,.tier,.step,.season .inner,.arearow,.faq details,.statement p,.statement .src,.qgrid > *');
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (en) {
+      if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); }
+    });
+  }, { threshold: 0.15 });
+  els.forEach(function (el, i) {
+    el.classList.add('reveal');
+    el.style.transitionDelay = (i % 3) * 90 + 'ms';
+    io.observe(el);
+  });
+})();
+</script>
 </body>
 </html>
